@@ -1,0 +1,99 @@
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Amiri', serif;
+font-family: 'Borel', cursive;
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Cairo Play', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'Handjet', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Noto Kufi Arabic', sans-serif;
+}
+header{
+
+    width: 100%;
+ 
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: rgb(38, 2, 85);
+    display: inline-block;
+}
+ul li a::after{
+    content: '';
+    display: block;
+    height: 5px;
+   
+    width: 0;
+    background: rgb(67, 56, 101);
+    transition: all .5s
+}
+ul li a:hover::after{
+    
+  width: 100%;
+}
+main{
+    display: flex;
+    direction: rtl;
+    
+    height: calc(100vh-100px);
+    align-items: center;
+    justify-content: center;
+   
+}
+.hero-img{
+    max-width: 600px;
+    height: auto;
+}
+.content-right{
+    width: 50%;
+}
+main h1{
+    font-size: 150px;
+    color: rgb(17, 4, 87);
+}
+main h4{
+    font-size: 48px;
+    color:lightseagreen;
+}
+main p{
+    margin: 30px 10px;
+}
+.cta{
+    padding: 30px 60px;
+    border-radius: 30px;
+   outline: none;
+    font-family: 'Lalezar', cursive;
+    font-size: 40px;
+    color: rgb(17, 4, 87);
+    background: lightcyan;
+    
+  }
+  .cta:hover{
+    padding: 60px;
+    border: none;
+    background-color: rgb(2, 56, 58);
+    box-shadow: 0px 0px 20px rgb(83, 69, 69);
+    border-radius: 60px;
+    text-overflow: ellipsis;
+    transition: 3s;
+    color: antiquewhite;
+  
+  }
+  hr{
+    color: red;
+  }
